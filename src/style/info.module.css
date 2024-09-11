@@ -1,0 +1,48 @@
+.div {
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    max-width: 800px; /* Ancho máximo */
+    margin: 20px auto; /* Centrar el contenedor */
+    font-family: 'Helvetica Neue', sans-serif; /* Tipografía moderna */
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(10px); /* Empieza desde abajo */
+    animation: slideUp 1s ease forwards; /* Aplica la animación */
+  }
+  
+  h2 {
+    color: #fbfcfe; /* Color de título */
+    font-size: 28px; /* Tamaño de título */
+    text-align: center; /* Alinear al centro */
+    margin-bottom: 15px; /* Espaciado inferior */
+    font-weight: 600; /* Negrita */
+  }
+  
+  p {
+    color: #fbf7f7; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 15px; /* Espaciado entre párrafos */
+  }
+  
+  p strong {
+    color: #ccf20f; /* Color del nombre del psicólogo */
+  }
+  
+  div p:last-of-type {
+    margin-bottom: 0; /* Elimina margen inferior del último párrafo */
+  }
+
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px); /* Empieza 30px abajo */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Termina en su posición original */
+    }
+  }
+
+
+  

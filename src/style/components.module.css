@@ -1,0 +1,65 @@
+.foto{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    
+    
+    
+    
+}
+
+.contenedor{
+    
+    display: flex;               /* Habilita Flexbox */
+    justify-content: center;     /* Centra horizontalmente */
+    align-items: center;         /* Centra verticalmente */
+    flex-direction: column;      /* Apila los elementos en columna (opcional, dependiendo de tu diseño) */
+    
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(10px); /* Empieza desde abajo */
+    animation: slideUp 1s ease forwards; /* Aplica la animación */
+}
+
+h4{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.letras {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    
+    letter-spacing: 0;
+    padding: 0;  /* Elimina padding */
+    margin: 0;   /* Elimina margen */
+}
+
+.letras h1 {
+    font-size: 60px;  /* Ajusta el tamaño si es necesario */
+    margin: 0;        /* Elimina el margen predeterminado */
+    padding: 0;       /* Elimina el padding predeterminado */
+}
+
+.letras h3 {
+    font-size: 30px;  /* Ajusta el tamaño si es necesario */
+    margin: 5px 0 0 0;  /* Ajusta el margen superior si lo quieres */
+    padding: 0;         /* Elimina padding */
+}
+
+
+
+@keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px); /* Empieza 30px abajo */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Termina en su posición original */
+    }
+  }
+
