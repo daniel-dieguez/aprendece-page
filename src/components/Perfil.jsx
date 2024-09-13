@@ -1,5 +1,5 @@
 import React from 'react'
-import LicenciadoImg from '../img/licenciado.jpg'
+import LicenciadoImg from '../img/licenciado3.png'
 import Style from '../style/components.module.css'
 
 export default function Perfil() {
