@@ -1,0 +1,49 @@
+.label {
+
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+    color: #fdfbfb;
+    display: block;
+  }
+  
+  .input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1em;
+    background-color: #e0e0e0;
+    color: #333333;
+  }
+
+  .select{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1em;
+    background-color: #e0e0e0;
+    color: #333333;
+
+}
+  
+
+
+  .horasContainer {
+    margin-top: 20px;
+  }
+  
+  .horaLabel {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .horaInput {
+    margin-right: 10px;
+  }
+  

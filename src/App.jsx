@@ -3,6 +3,7 @@ import Style from '../src/style/inicio.module.css'
 import Perfil from './components/Perfil'
 import SobreMi from './pages/SobreMi';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Agendar from './pages/Agendar';
 
 export default function App() {
   return (
@@ -24,10 +25,14 @@ export default function App() {
                 <Link to='/sobremi'>
                   <button>Saber más de mí</button>
                 </Link>
+                <Link to='/agendar'>
+                  <button>Agendar cita</button>
+                </Link>
               </div>
             </div>
           } />
           <Route exact path='/sobremi' element={<SobreMi />} />
+          <Route exact path='/agendar' element={<Agendar />} />
         </Routes>
       </div>
     </Router>
