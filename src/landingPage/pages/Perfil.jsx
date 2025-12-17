@@ -2,6 +2,7 @@ import React from 'react'
 import LicenciadoImg from '../img/licenciado3.1.jpg'
 import Style from '../style/components.module.css'
 
+
 export default function Perfil() {
   return (
     <div className={Style.contenedor}>

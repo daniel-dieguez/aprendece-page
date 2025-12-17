@@ -1,4 +1,4 @@
-body{
+.cuerpo{
   background: url('../img/fondo.jpg') no-repeat center top; /* Imagen centrada en la parte superior */
   background-size: auto; /* Deja que el tamaño sea automático */
   background-attachment: scroll; /* El fondo se moverá al desplazarse */
