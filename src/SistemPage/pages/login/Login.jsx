@@ -3,11 +3,13 @@ import Style from '../../styles/login.module.css'
 import aprende from '../../../landingPage/img/log.png'
 import { Link } from 'react-router-dom';
 import { Input, Label } from 'reactstrap';
-import { login } from '../../services/authService';
+import { login } from '../../Services/authService';
 
 import { toast } from 'react-toastify'
-import Dashboard from '../dashboard/Dashboard';
+import { OptionsToast } from '../../Globales';
+// import Dashboard from '../dashboard/Dashboard';
 // import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Login() {
@@ -16,6 +18,7 @@ export default function Login() {
   const [password, setPassword] = useState('');
   // const [error, setError] = useState("");
   
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -33,14 +36,14 @@ export default function Login() {
       localStorage.setItem("user", JSON.stringify(data));
 
       console.log("Login exitoso:", data);
-      toast.success("Login exitoso");
+      toast.success("Login exitoso", OptionsToast);
+      navigate("/dashboard")
 
      
       
 
     } catch (err) {
-      // setError("Usuario o contraseña incorrectos");
-      toast.error("Usuario o contraseña incorrectos");
+      toast.error("Usuario o contraseña incorrectos", OptionsToast);
 
     } 
   };

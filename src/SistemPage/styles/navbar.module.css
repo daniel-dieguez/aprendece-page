@@ -1,0 +1,32 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: #f9fcff;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #000b0f;
+  
+}
+
+.subLogo{
+  text-align: center;
+  color: #000b0f;
+}
+
+.sidebar a {
+  color: #000b0f;
+  margin-bottom: 10px;
+}
+
+.sidebar a.active {
+  background-color: #343a40;
+  color: white;
+}
